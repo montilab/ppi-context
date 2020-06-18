@@ -1,0 +1,69 @@
+  
+---
+output: rmarkdown::github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r echo=FALSE, message=FALSE}
+knitr::opts_chunk$set(message=FALSE, comment="#>")
+```
+
+# PPI-Context
+
+Contextualization of protein-protein interaction databases by cell line
+
+#### Clone repository
+```
+git clone https://github.com/montilab/ppi-context
+cd ppi-context
+```
+
+#### The data
+
+If you just want the data it's easy to load into R...
+
+```{r}
+ppi <- read.delim("data/PPI-Context.txt", header=TRUE, sep="\t", stringsAsFactors=FALSE)
+head(ppi)
+```
+
+#### Pre-processing the data
+```
+| PPI - Context (v1.0)
+usage: ppictx.py [-h] [-r] [-d]
+                   [-fh PATH_HIPPIE] 
+                   [-fp PATH_PUBTATOR]
+                   [-fc PATH_CELLOSAURUS]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -r, --run             run pipeline
+  -d, --download        download raw data first
+  -fh PATH_HIPPIE       path to downloaded Hippie data (optional)
+  -fp PATH_PUBTATOR     path to downloaded Pubtator data (optional)
+  -fc PATH_CELLOSAURUS  path to downloaded Cellosaurus data (optional)
+```
+
+In most cases you will need to download the latest bulk data first and then process it...
+```bash
+python3 ppictx.py --download --run
+```
+
+```
+| PPI - Context (v1.0)
+| Downloading raw data...
+| Processing raw data
+  ~ [PPI]
+  ~ [PID -> CLA]
+  ~ [CLA -> CID]
+  ~ [PPI -> PID -> CLA -> CID]
+```
+
+In other cases, you might have the previous versions of the data to process...
+```bash
+python3 ppictx.py --run \
+                    -fh path/to/HIPPIE.mitab \
+                    -fp path/to/PUBTATOR.gz \
+                    -fc path/to/CELLOSAURUS.txt
+```

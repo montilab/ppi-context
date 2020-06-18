@@ -1,0 +1,1701 @@
+----------------------------------------------------------------------------
+        CALIPHO group at the SIB - Swiss Institute of Bioinformatics
+        Geneva, Switzerland
+----------------------------------------------------------------------------
+
+ Description: Cellosaurus: a knowledge resource on cell lines
+ Version: 34.0
+ Last update: 12-March-2020
+
+----------------------------------------------------------------------------
+    _____     _ _
+   / ____|   | | |
+  | |     ___| | | ___  ___  __ _ _   _ _ __ _   _ ___
+  | |    / _ \ | |/ _ \/ __|/ _` | | | | '__| | | / __|
+  | |___|  __/ | | (_) \__ \ (_| | |_| | |  | |_| \__ \
+   \_____\___|_|_|\___/|___/\__,_|\__,_|_|   \__,_|___/
+
+
+ Licensing information: we have chosen to apply the Creative Commons
+ Attribution 4.0 International (CC BY 4.0) license to the Cellosaurus
+ (https://creativecommons.org/licenses/by/4.0/). This means that you are
+ free to copy and redistribute the Cellosaurus in any medium or format.
+ You can remix, transform, and build upon the Cellosaurus for any purpose,
+ even commercially. You must give appropriate credit, provide a link to the
+ license, and indicate if changes were made.
+
+ For any questions regarding the Cellosaurus, contact us at:
+ mailto:cellosaurus@sib.swiss
+
+ The definition of the Cellosaurus is provided in the following format:
+
+ ---------  ---------------------------     ----------------------
+ Line code  Content                         Occurrence in an entry
+ ---------  ---------------------------     ----------------------
+ ID         Identifier (cell line name)     Once; starts an entry
+ AC         Accession (CVCL_xxxx)           Once
+ AS         Secondary accession number(s)   Optional; once
+ SY         Synonyms                        Optional; once
+ DR         Cross-references                Optional; once or more
+ RX         References identifiers          Optional: once or more
+ WW         Web pages                       Optional; once or more
+ CC         Comments                        Optional; once or more
+ ST         STR profile data                Optional; once or more
+ DI         Diseases                        Optional; once or more
+ OX         Species of origin               Once or more
+ HI         Hierarchy                       Optional; once or more
+ OI         Originate from same individual  Optional; once or more
+ SX         Sex (gender) of cell            Optional; once
+ AG         Age of donor at sampling        Optional; once
+ CA         Category                        Once
+ DT         Date (entry history)            Once
+ //         Terminator                      Once; ends an entry
+
+AN   Next free AC: CVCL_YY01
+____________________________________________________________________________
+ID   CCRF-CEM
+AC   CVCL_0207
+SY   CCRF/CEM; CCRFCEM; CCRF.CEM; CCRF CEM; CCRF; CEM; CEM-CCRF; CEM-CCRF (CAMR); CCRF/CEM/0; CEM/0; CEM-0; CCRF-CEM/S; GM03671; GM03671C
+DR   BTO; BTO:0000736
+DR   CLO; CLO_0002334
+DR   CLO; CLO_0015478
+DR   CLO; CLO_0050143
+DR   EFO; EFO_0002128
+DR   MCCL; MCC:0000096
+DR   MCCL; MCC:0000097
+DR   CLDB; cl675
+DR   CLDB; cl676
+DR   CLDB; cl677
+DR   AddexBio; C0003001/32
+DR   ArrayExpress; E-MTAB-783
+DR   ArrayExpress; E-MTAB-3610
+DR   ArrayExpress; E-MTAB-7721
+DR   ArrayExpress; E-MTAB-7722
+DR   ATCC; CCL-119
+DR   ATCC; CRM-CCL-119
+DR   ATCC; CRL-7916
+DR   ATCC; CRL-8436
+DR   BCRC; 60137
+DR   BCRJ; 0063
+DR   BioSample; SAMN01821675
+DR   BioSample; SAMN03471121
+DR   BioSample; SAMN03471203
+DR   BioSample; SAMN03472050
+DR   BioSample; SAMN03472700
+DR   BioSample; SAMN03472808
+DR   BioSample; SAMN03473385
+DR   CCLE; CCRFCEM_HAEMATOPOIETIC_AND_LYMPHOID_TISSUE
+DR   CCRID; 3131C0001000700129
+DR   CCRID; 3131C0001000700147
+DR   CCTCC; GDC0219
+DR   Cell_Model_Passport; SIDM00121
+DR   ChEMBL-Cells; CHEMBL3307510
+DR   ChEMBL-Cells; CHEMBL3307641
+DR   ChEMBL-Targets; CHEMBL382
+DR   ChEMBL-Targets; CHEMBL393
+DR   ChEMBL-Targets; CHEMBL614028
+DR   CLS; 300147/p752_CCRF-CEM
+DR   Coriell; GM03671
+DR   Cosmic; 683716
+DR   Cosmic; 721708
+DR   Cosmic; 801728
+DR   Cosmic; 846384
+DR   Cosmic; 850198
+DR   Cosmic; 875863
+DR   Cosmic; 897449
+DR   Cosmic; 905952
+DR   Cosmic; 913411
+DR   Cosmic; 919157
+DR   Cosmic; 922674
+DR   Cosmic; 932765
+DR   Cosmic; 933544
+DR   Cosmic; 974251
+DR   Cosmic; 1012060
+DR   Cosmic; 1037690
+DR   Cosmic; 1044252
+DR   Cosmic; 1070703
+DR   Cosmic; 1071876
+DR   Cosmic; 1092595
+DR   Cosmic; 1115588
+DR   Cosmic; 1118462
+DR   Cosmic; 1127261
+DR   Cosmic; 1151774
+DR   Cosmic; 1175854
+DR   Cosmic; 1176599
+DR   Cosmic; 1191691
+DR   Cosmic; 1224367
+DR   Cosmic; 1226857
+DR   Cosmic; 1247870
+DR   Cosmic; 1281365
+DR   Cosmic; 1305336
+DR   Cosmic; 1330503
+DR   Cosmic; 1375587
+DR   Cosmic; 1483363
+DR   Cosmic; 1509201
+DR   Cosmic; 1523831
+DR   Cosmic; 1524793
+DR   Cosmic; 1639635
+DR   Cosmic; 1664520
+DR   Cosmic; 1760519
+DR   Cosmic; 1998437
+DR   Cosmic; 2165706
+DR   Cosmic; 2301560
+DR   Cosmic; 2361364
+DR   Cosmic; 2433754
+DR   Cosmic; 2458763
+DR   Cosmic; 2462863
+DR   Cosmic; 2602911
+DR   Cosmic; 2649235
+DR   Cosmic; 2649237
+DR   Cosmic; 2668294
+DR   Cosmic-CLP; 905952
+DR   DepMap; ACH-001738
+DR   DSMZ; ACC-240
+DR   ECACC; 85112105
+DR   GDSC; 905952
+DR   GEO; GSM2116
+DR   GEO; GSM50193
+DR   GEO; GSM50257
+DR   GEO; GSM236780
+DR   GEO; GSM236816
+DR   GEO; GSM750806
+DR   GEO; GSM799345
+DR   GEO; GSM799408
+DR   GEO; GSM1153416
+DR   GEO; GSM1178011
+DR   GEO; GSM1178012
+DR   GEO; GSM1178013
+DR   GEO; GSM1181330
+DR   GEO; GSM1181347
+DR   GEO; GSM1374445
+DR   GEO; GSM1669670
+DR   GEO; GSM2124653
+DR   IARC_TP53; 13197
+DR   IARC_TP53; 21218
+DR   IGRhCellID; CCRFCEM
+DR   IPD-IMGT/HLA; 10403
+DR   IZSLER; BS TCL 11
+DR   JCRB; IFO50412
+DR   JCRB; JCRB0033
+DR   JCRB; JCRB9023
+DR   KCLB; 10119
+DR   LINCS_LDP; LCL-1012
+DR   Lonza; 647
+DR   NCBI_Iran; C105
+DR   NCI-DTP; CCRF-CEM
+DR   PharmacoDB; CCRFCEM_190_2019
+DR   PRIDE; PXD005940
+DR   PRIDE; PXD005942
+DR   RCB; RCB1980
+DR   SKY/M-FISH/CGH; 2784
+DR   TKG; TKG 0563
+DR   Wikidata; Q54809015
+RX   CelloPub=CLPUB00447;
+RX   DOI=10.1016/B978-0-12-221970-2.50457-5;
+RX   PubMed=2041050;
+RX   PubMed=2140233;
+RX   PubMed=2144611;
+RX   PubMed=2255914;
+RX   PubMed=3335022;
+RX   PubMed=3495441;
+RX   PubMed=5224274;
+RX   PubMed=6198871;
+RX   PubMed=6582512;
+RX   PubMed=6600440;
+RX   PubMed=7630190;
+RX   PubMed=7888679;
+RX   PubMed=8127147;
+RX   PubMed=8547074;
+RX   PubMed=8641406;
+RX   PubMed=9108419;
+RX   PubMed=9290701;
+RX   PubMed=9510473;
+RX   PubMed=9557624;
+RX   PubMed=9685479;
+RX   PubMed=9738977;
+RX   PubMed=9823951;
+RX   PubMed=9933131;
+RX   PubMed=10071127;
+RX   PubMed=10700174;
+RX   PubMed=11565033;
+RX   PubMed=14278051;
+RX   PubMed=14500364;
+RX   PubMed=15472075;
+RX   PubMed=15748285;
+RX   PubMed=16408098;
+RX   PubMed=17088437;
+RX   PubMed=17117183;
+RX   PubMed=17170727;
+RX   PubMed=19372543;
+RX   PubMed=20164919;
+RX   PubMed=20215515;
+RX   PubMed=20922763;
+RX   PubMed=22384151;
+RX   PubMed=22675565;
+RX   PubMed=22628656;
+RX   PubMed=23856246;
+RX   PubMed=23933261;
+RX   PubMed=24279929;
+RX   PubMed=24670534;
+RX   PubMed=27377824;
+RX   PubMed=27397505;
+RX   PubMed=27807467;
+RX   PubMed=28196595;
+RX   PubMed=29718670;
+RX   PubMed=30894373;
+RX   PubMed=31160637;
+RX   PubMed=31394625;
+WW   https://dtp.cancer.gov/discovery_development/nci-60/cell_list.htm
+WW   https://strap.nci.nih.gov/celline_detail.php?sample_id=29
+WW   http://www.thermofisher.com/ch/en/home/technical-resources/cell-lines/c/cell-lines-detail-12.html
+WW   http://www.cogcell.org/cellreqs-ncipptp.php
+WW   http://www.pptpinvitro.org/cell_lines_panel.php
+WW   http://www.nibsc.org/Default.aspx?pageid=597&id=0005&theme=default
+WW   http://tcpaportal.org/mclp/
+WW   http://www.cellresource.cn/fdetail.aspx?id=697
+WW   http://www.cellresource.cn/fdetail.aspx?id=713
+CC   Part of: Cancer Cell Line Encyclopedia (CCLE) project.
+CC   Part of: COSMIC cell lines project.
+CC   Part of: LL-100 blood cancer cell line panel.
+CC   Part of: MD Anderson Cell Lines Project.
+CC   Part of: Naval Biosciences Laboratory (NBL) collection (transferred to ATCC in 1982).
+CC   Part of: NCI Pediatric Preclinical Testing Program (PPTP) cell line panel.
+CC   Part of: NCI-60 cancer cell line panel.
+CC   Part of: NCI-7 clinical proteomics reference material cell line panel.
+CC   Doubling time: 23 hours (PubMed=17117183); 24 hours (PubMed=20922763); 26.7 hours (NCI-DTP); ~24 hours (CLS); ~24-30 hours (DSMZ).
+CC   HLA typing: B*08,40; C*03:04:01,07; DPB1*04:01,13:01; DQB1*02:01,02:02; DRB1*03:01:01,07:01 (PubMed=15748285).
+CC   HLA typing: DPB1*04:01,13:01 (IPD-IMGT/HLA; 10403).
+CC   Microsatellite instability: Instable (MSI-low) (PubMed=31068700; Sanger).
+CC   Sequence variation: NKX2.5-BCL11B gene fusion (PubMed=14500364).
+CC   Sequence variation: Heterozygous for FBXW7 p.Arg465Cys (c.1393C>T) (PubMed=11565033; CCLE; Cosmic-CLP).
+CC   Sequence variation: Heterozygous for FLT3 p.Ala627Thr (c.1879G>A) (PubMed=17088437; CCLE; Cosmic-CLP).
+CC   Sequence variation: Heterozygous for KRAS p.Gly12Asp (c.35G>A) (PubMed=17088437; CCLE; Cosmic-CLP).
+CC   Sequence variation: Heterozygous for NOTCH1 p.Leu1593_Arg1594insProArgLeuProHisAsnSerSerPheHisPheLeu (c.4780_4781ins36) and p.Pro2412Thr (c.7234C>A) (PubMed=15472075).
+CC   Sequence variation: Heterozygous for TP53 p.Arg175His (c.524G>A) and p.Arg248Gln (c.743G>A) (PubMed=2144611; PubMed=10071127; PubMed=17088437; CCLE; Cosmic-CLP).
+CC   Omics: Array-based CGH.
+CC   Omics: CNV analysis.
+CC   Omics: Deep exome analysis.
+CC   Omics: Deep proteome analysis.
+CC   Omics: Deep RNAseq analysis.
+CC   Omics: DNA methylation analysis.
+CC   Omics: Fluorescence phenotype profiling.
+CC   Omics: Metabolome analysis.
+CC   Omics: lncRNA expression profiling.
+CC   Omics: Protein expression by reverse-phase protein arrays.
+CC   Omics: Proteome analysis by 2D-DE/MS.
+CC   Omics: SNP array analysis.
+CC   Omics: Transcriptome analysis.
+CC   Genome ancestry: African=0.2%; Native American=0.21%; East Asian, North=0.43%; East Asian, South=0.09%; South Asian=0.81%; European, North=69.4%; European, South=28.85% (PubMed=30894373).
+CC   Discontinued: ATCC; CRL-7916; true.
+CC   Derived from sampling site: Peripheral blood.
+ST   Source(s): AddexBio; ATCC; CLS; Cosmic-CLP; DSMZ; ECACC; JCRB; KCLB; PubMed=19372543; PubMed=20922763; RCB
+ST   Amelogenin: X
+ST   CSF1PO: 10,11 (AddexBio; ATCC_CCL-119; Cosmic-CLP; JCRB_IFO50412_JCRB9023; KCLB; PubMed=20922763)
+ST   CSF1PO: 10,13 (ATCC_CRL-8436; CLS; DSMZ)
+ST   CSF1PO: 11 (ECACC; JCRB_JCRB0033; PubMed=19372543)
+ST   CSF1PO: 9,10,11 (RCB)
+ST   D13S317: 11,12 (AddexBio; ATCC_CCL-119; Cosmic-CLP; ECACC; JCRB; KCLB; PubMed=19372543; PubMed=20922763)
+ST   D13S317: 11 (ATCC_CRL-8436; CLS; DSMZ)
+ST   D13S317: 10,11,12 (RCB)
+ST   D16S539: 10,13 (AddexBio; ATCC_CCL-119; ATCC_CRL-8436; CLS; Cosmic-CLP; DSMZ; ECACC; JCRB; PubMed=19372543; PubMed=20922763)
+ST   D16S539: 10,13,14 (RCB)
+ST   D18S51: 13,18
+ST   D19S433: 14,15
+ST   D21S11: 30,34.2 (CLS)
+ST   D21S11: 30,33.2 (PubMed=19372543; PubMed=20922763)
+ST   D2S1338: 24
+ST   D3S1358: 14,15 (CLS; KCLB)
+ST   D3S1358: 15 (PubMed=19372543)
+ST   D3S1358: 15,16 (PubMed=20922763)
+ST   D5S818: 12,13 (AddexBio; ATCC_CCL-119; ATCC_CRL-8436; CLS; DSMZ; ECACC; KCLB; PubMed=19372543; PubMed=20922763; RCB)
+ST   D5S818: 12,13,14 (Cosmic-CLP)
+ST   D7S820: 9,13 (AddexBio; ATCC_CCL-119; ATCC_CRL-8436; CLS; Cosmic-CLP; DSMZ; ECACC; JCRB_IFO50412_JCRB9023; KCLB; PubMed=19372543; PubMed=20922763; RCB)
+ST   D7S820: 9,12 (JCRB_JCRB0033)
+ST   D8S1179: 12,13 (CLS; PubMed=20922763)
+ST   D8S1179: 13 (PubMed=19372543)
+ST   FGA: 23,24
+ST   Penta D: 10,11
+ST   Penta E: 5,14
+ST   TH01: 6,7
+ST   TPOX: 8 (AddexBio; ATCC_CCL-119; ATCC_CRL-8436; CLS; Cosmic-CLP; ECACC; JCRB; KCLB; PubMed=19372543; PubMed=20922763; RCB)
+ST   TPOX: 7,8 (DSMZ)
+ST   vWA: 17,19 (AddexBio; ATCC_CCL-119; ATCC_CRL-8436; CLS; Cosmic-CLP; DSMZ; ECACC; JCRB; KCLB; PubMed=19372543; PubMed=20922763)
+ST   vWA: 18,19 (RCB)
+DI   NCIt; C7953; Childhood T acute lymphoblastic leukemia
+DI   ORDO; Orphanet_99861; Precursor T-cell acute lymphoblastic leukemia
+OX   NCBI_TaxID=9606; ! Homo sapiens
+SX   Female
+AG   3Y11M
+CA   Cancer cell line
+DT   Created: 04-04-12; Last updated: 12-03-20; Version: 34
+//
+ID   CHO-K1
+AC   CVCL_0214
+SY   CHO K1; CHOK1; CHO cell clone K1; GM15452
+DR   BTO; BTO:0000457
+DR   CLO; CLO_0002427
+DR   CLO; CLO_0002462
+DR   CLO; CLO_0002463
+DR   CLO; CLO_0026669
+DR   CLO; CLO_0050409
+DR   CLO; CLO_0050420
+DR   CLO; CLO_0050423
+DR   MCCL; MCC:0000103
+DR   CLDB; cl730
+DR   CLDB; cl731
+DR   CLDB; cl732
+DR   CLDB; cl734
+DR   CLDB; cl735
+DR   CLDB; cl738
+DR   CLDB; cl739
+DR   CLDB; cl740
+DR   CLDB; cl741
+DR   CLDB; cl4897
+DR   AddexBio; P0017001/33
+DR   ATCC; CCL-61
+DR   ATCC; CRL-9618
+DR   BCRC; 60006
+DR   BCRJ; 0069
+DR   CCLV; CCLV-RIE 0134
+DR   CCLV; CCLV-RIE 0315
+DR   CCRID; 3111C0001CCC000004
+DR   CCRID; 3111C0002000000006
+DR   CCRID; 3131C0001000100007
+DR   CCRID; 3142C0001000000018
+DR   CCRID; 3142C0001000000406
+DR   CCRID; 3153C0001000000066
+DR   CCTCC; GDC0018
+DR   ChEMBL-Cells; CHEMBL3307512
+DR   ChEMBL-Targets; CHEMBL614031
+DR   CLS; 603480/p693_CHO-K1
+DR   Coriell; GM15452
+DR   DSMZ; ACC-110
+DR   ECACC; 85051005
+DR   GEO; GSM1968555
+DR   GEO; GSM1968563
+DR   GEO; GSM1968571
+DR   GEO; GSM1968572
+DR   GEO; GSM1968569
+DR   GEO; GSM1968570
+DR   GEO; GSM1968594
+DR   GEO; GSM1968596
+DR   GEO; GSM1968598
+DR   GEO; GSM1968589
+DR   GEO; GSM1968600
+DR   GEO; GSM1968599
+DR   GEO; GSM1968591
+DR   GEO; GSM1968593
+DR   GEO; GSM1968595
+DR   GEO; GSM1968597
+DR   GEO; GSM1968565
+DR   GEO; GSM1968566
+DR   GEO; GSM1968560
+DR   GEO; GSM1968559
+DR   GEO; GSM1968558
+DR   GEO; GSM1968561
+DR   GEO; GSM1968557
+DR   GEO; GSM1968562
+DR   GEO; GSM1968564
+DR   GEO; GSM1968567
+DR   GEO; GSM1968556
+DR   GEO; GSM1968568
+DR   IBRC; C10136
+DR   ICLC; ATL98003
+DR   IZSLER; BS CL 15
+DR   JCRB; IFO50414
+DR   JCRB; JCRB9018
+DR   KCB; KCB 88028YJ
+DR   KCLB; 10061
+DR   Lonza; 44
+DR   MetaboLights; MTBLS493
+DR   NCBI_Iran; C645
+DR   RCB; RCB0285
+DR   RCB; RCB2330
+DR   RCB; RCB2869
+DR   TKG; TKG 0328
+DR   TOKU-E; 949
+DR   TOKU-E; 950
+DR   Wikidata; Q54812705
+RX   DOI=10.3390/pr1030296;
+RX   DOI=10.3390/pr5020020;
+RX   PubMed=10320750;
+RX   PubMed=21804562;
+RX   PubMed=21945585;
+RX   PubMed=23873082;
+RX   PubMed=26993211;
+RX   PubMed=28544881;
+WW   https://en.wikipedia.org/wiki/Chinese_hamster_ovary_cell
+WW   http://www.chogenome.org/
+WW   http://genome.ucsc.edu/cgi-bin/hgGateway?db=criGriChoV2&redirect=manual&source=genome.ucsc.edu
+WW   http://www.thermofisher.com/ch/en/home/technical-resources/cell-lines/c/cell-lines-detail-30.html
+WW   https://web.archive.org/web/20160506232703/https://www.biotechhistory.org/magazine-article/vital-tools-brief-history-cho-cells/
+WW   http://en.vircell.com/products/cho-k1-cell-line/
+WW   https://www.phe-culturecollections.org.uk/media/128263/chok1-cell-line-profile.pdf
+WW   http://www.cellresource.cn/fdetail.aspx?id=4
+WW   http://www.cellresource.cn/fdetail.aspx?id=378
+WW   http://www.cellresource.cn/fdetail.aspx?id=459
+WW   http://www.cellresource.cn/fdetail.aspx?id=786
+WW   http://www.cellresource.cn/fdetail.aspx?id=1053
+WW   http://www.cellresource.cn/fdetail.aspx?id=1340
+CC   Doubling time: ~24 hours (DSMZ).
+CC   Omics: Deep RNAseq analysis.
+CC   Omics: Genome sequenced.
+CC   Omics: Metabolome analysis.
+CC   Omics: miRNA expression profiling.
+CC   Omics: Transcriptome analysis.
+CC   Derived from sampling site: Ovary.
+OX   NCBI_TaxID=10029; ! Cricetulus griseus
+HI   CVCL_0213 ! CHO
+SX   Female
+AG   Adult
+CA   Spontaneously immortalized cell line
+DT   Created: 04-04-12; Last updated: 12-03-20; Version: 29
+//
+ID   HCT 116
+AC   CVCL_0291
+SY   HCT-116; HCT.116; HCT_116; HCT116; CoCL2
+DR   BTO; BTO:0001109
+DR   CLO; CLO_0003665
+DR   EFO; EFO_0002824
+DR   MCCL; MCC:0000181
+DR   CLDB; cl1574
+DR   CLDB; cl1575
+DR   CLDB; cl5198
+DR   4DN; 4DNSRMYUIVGD
+DR   AddexBio; C0009005/41
+DR   ArrayExpress; E-MTAB-783
+DR   ArrayExpress; E-MTAB-2706
+DR   ArrayExpress; E-MTAB-2770
+DR   ArrayExpress; E-MTAB-3610
+DR   ATCC; CCL-247
+DR   BCRC; 60349
+DR   BCRJ; 0288
+DR   BioSample; SAMN03470980
+DR   BioSample; SAMN03471481
+DR   BioSample; SAMN03473487
+DR   BioSample; SAMN05292433
+DR   BioSample; SAMN10988251
+DR   CCLE; HCT116_LARGE_INTESTINE
+DR   CCRID; 3111C0001CCC000158
+DR   CCRID; 3111C0001CCC000331
+DR   CCRID; 3131C0001000700099
+DR   CCRID; 3142C0001000001727
+DR   Cell_Model_Passport; SIDM00783
+DR   ChEMBL-Cells; CHEMBL3308372
+DR   ChEMBL-Targets; CHEMBL394
+DR   CLS; 300195/p19841_HCT116.html
+DR   ColonAtlas; HCT116
+DR   Cosmic; 711257
+DR   Cosmic; 720329
+DR   Cosmic; 724840
+DR   Cosmic; 869794
+DR   Cosmic; 870449
+DR   Cosmic; 873701
+DR   Cosmic; 875296
+DR   Cosmic; 875425
+DR   Cosmic; 875847
+DR   Cosmic; 876644
+DR   Cosmic; 876706
+DR   Cosmic; 887223
+DR   Cosmic; 889535
+DR   Cosmic; 897457
+DR   Cosmic; 902790
+DR   Cosmic; 905936
+DR   Cosmic; 913887
+DR   Cosmic; 934564
+DR   Cosmic; 947355
+DR   Cosmic; 948126
+DR   Cosmic; 948861
+DR   Cosmic; 985996
+DR   Cosmic; 995410
+DR   Cosmic; 1043815
+DR   Cosmic; 1044257
+DR   Cosmic; 1045410
+DR   Cosmic; 1057752
+DR   Cosmic; 1066205
+DR   Cosmic; 1067220
+DR   Cosmic; 1092600
+DR   Cosmic; 1102383
+DR   Cosmic; 1122325
+DR   Cosmic; 1131683
+DR   Cosmic; 1132568
+DR   Cosmic; 1132689
+DR   Cosmic; 1154644
+DR   Cosmic; 1175840
+DR   Cosmic; 1176588
+DR   Cosmic; 1183769
+DR   Cosmic; 1184080
+DR   Cosmic; 1184333
+DR   Cosmic; 1187306
+DR   Cosmic; 1218874
+DR   Cosmic; 1223141
+DR   Cosmic; 1305353
+DR   Cosmic; 1310945
+DR   Cosmic; 1332008
+DR   Cosmic; 1436021
+DR   Cosmic; 1466804
+DR   Cosmic; 1466815
+DR   Cosmic; 1479594
+DR   Cosmic; 1486132
+DR   Cosmic; 1519359
+DR   Cosmic; 1524003
+DR   Cosmic; 1524333
+DR   Cosmic; 1552179
+DR   Cosmic; 1571772
+DR   Cosmic; 1609495
+DR   Cosmic; 1672408
+DR   Cosmic; 1676727
+DR   Cosmic; 1708402
+DR   Cosmic; 1805253
+DR   Cosmic; 1927246
+DR   Cosmic; 1945865
+DR   Cosmic; 1995437
+DR   Cosmic; 1998442
+DR   Cosmic; 2036656
+DR   Cosmic; 2046556
+DR   Cosmic; 2052593
+DR   Cosmic; 2145576
+DR   Cosmic; 2301978
+DR   Cosmic; 2389569
+DR   Cosmic; 2433755
+DR   Cosmic; 2464667
+DR   Cosmic; 2550353
+DR   Cosmic; 2646766
+DR   Cosmic; 2651864
+DR   Cosmic; 2667881
+DR   Cosmic; 2667972
+DR   Cosmic; 2668248
+DR   Cosmic; 2727479
+DR   Cosmic-CLP; 905936
+DR   DepMap; ACH-000971
+DR   DSMZ; ACC-581
+DR   ECACC; 91091005
+DR   ENCODE; ENCBS004UZY
+DR   ENCODE; ENCBS009DQE
+DR   ENCODE; ENCBS257IHV
+DR   ENCODE; ENCBS378ENC
+DR   ENCODE; ENCBS389ENC
+DR   ENCODE; ENCBS409ENC
+DR   ENCODE; ENCBS409MTT
+DR   ENCODE; ENCBS431ENC
+DR   ENCODE; ENCBS471AAA
+DR   ENCODE; ENCBS472AAA
+DR   ENCODE; ENCBS475AAA
+DR   ENCODE; ENCBS476AAA
+DR   ENCODE; ENCBS494OPB
+DR   ENCODE; ENCBS615KTO
+DR   ENCODE; ENCBS626JHZ
+DR   ENCODE; ENCBS650OZU
+DR   ENCODE; ENCBS847SOB
+DR   ENCODE; ENCBS851PYB
+DR   GDSC; 905936
+DR   GEO; GSM810
+DR   GEO; GSM2143
+DR   GEO; GSM50188
+DR   GEO; GSM50252
+DR   GEO; GSM115118
+DR   GEO; GSM206501
+DR   GEO; GSM274713
+DR   GEO; GSM274714
+DR   GEO; GSM274726
+DR   GEO; GSM481405
+DR   GEO; GSM513818
+DR   GEO; GSM514292
+DR   GEO; GSM580039
+DR   GEO; GSM580040
+DR   GEO; GSM741266
+DR   GEO; GSM750773
+DR   GEO; GSM750793
+DR   GEO; GSM784012
+DR   GEO; GSM799331
+DR   GEO; GSM799394
+DR   GEO; GSM827446
+DR   GEO; GSM846355
+DR   GEO; GSM887062
+DR   GEO; GSM888132
+DR   GEO; GSM945287
+DR   GEO; GSM945304
+DR   GEO; GSM1153399
+DR   GEO; GSM1178133
+DR   GEO; GSM1178134
+DR   GEO; GSM1178135
+DR   GEO; GSM1181250
+DR   GEO; GSM1181367
+DR   GEO; GSM1346874
+DR   GEO; GSM1374516
+DR   GEO; GSM1374517
+DR   GEO; GSM1374518
+DR   GEO; GSM1404391
+DR   GEO; GSM1404392
+DR   GEO; GSM1448092
+DR   GEO; GSM1669868
+DR   GEO; GSM2124655
+DR   GEO; GSM2550001
+DR   IARC_TP53; 21064
+DR   ICLC; HTL95025
+DR   IZSLER; BS TCL 100
+DR   KCB; KCB 200706YJ
+DR   KCLB; 10247
+DR   LiGeA; CCLE_168
+DR   LINCS_LDP; LCL-1161
+DR   Lonza; 691
+DR   MeSH; D045325
+DR   MetaboLights; MTBLS227
+DR   NCBI_Iran; C570
+DR   NCI-DTP; HCT-116
+DR   PharmacoDB; HCT116_517_2019
+DR   PRIDE; PXD000089
+DR   PRIDE; PXD000394
+DR   PRIDE; PXD001352
+DR   PRIDE; PXD001426
+DR   PRIDE; PXD001546
+DR   PRIDE; PXD001550
+DR   PRIDE; PXD002793
+DR   PRIDE; PXD004452
+DR   PRIDE; PXD005235
+DR   PRIDE; PXD005354
+DR   PRIDE; PXD005942
+DR   RCB; RCB2979
+DR   SKY/M-FISH/CGH; 1687
+DR   SKY/M-FISH/CGH; 2778
+DR   SKY/M-FISH/CGH; 2785
+DR   SKY/M-FISH/CGH; 3883
+DR   TOKU-E; 1422
+DR   Wikidata; Q28334584
+RX   PubMed=2041050;
+RX   PubMed=2835152;
+RX   PubMed=3335022;
+RX   PubMed=3955419;
+RX   PubMed=6437669;
+RX   PubMed=7214343;
+RX   PubMed=7761852;
+RX   PubMed=9000147;
+RX   PubMed=9000572;
+RX   PubMed=9023415;
+RX   PubMed=9178645;
+RX   PubMed=9294210;
+RX   PubMed=9515795;
+RX   PubMed=9715273;
+RX   PubMed=10612807;
+RX   PubMed=10674020;
+RX   PubMed=10700174;
+RX   PubMed=10700188;
+RX   PubMed=10737795;
+RX   PubMed=11226274;
+RX   PubMed=11314036;
+RX   PubMed=11414198;
+RX   PubMed=11526487;
+RX   PubMed=11687795;
+RX   PubMed=12068308;
+RX   PubMed=12584437;
+RX   PubMed=12615714;
+RX   PubMed=15748285;
+RX   PubMed=15900046;
+RX   PubMed=16418264;
+RX   PubMed=16854228;
+RX   PubMed=17088437;
+RX   PubMed=17178751;
+RX   PubMed=17363507;
+RX   PubMed=18258742;
+RX   PubMed=18340113;
+RX   PubMed=19372543;
+RX   PubMed=19927377;
+RX   PubMed=20164919;
+RX   PubMed=20215515;
+RX   PubMed=20570890;
+RX   PubMed=20606684;
+RX   PubMed=21912889;
+RX   PubMed=22336246;
+RX   PubMed=22384151;
+RX   PubMed=22460905;
+RX   PubMed=22628656;
+RX   PubMed=23272949;
+RX   PubMed=23546019;
+RX   PubMed=23671654;
+RX   PubMed=23856246;
+RX   PubMed=23933261;
+RX   PubMed=24042735;
+RX   PubMed=24279929;
+RX   PubMed=24670534;
+RX   PubMed=24755471;
+RX   PubMed=25485619;
+RX   PubMed=25576301;
+RX   PubMed=25841592;
+RX   PubMed=25926053;
+RX   PubMed=25960936;
+RX   PubMed=25984343;
+RX   PubMed=26169745;
+RX   PubMed=23631600;
+RX   PubMed=26537799;
+RX   PubMed=27377824;
+RX   PubMed=27397505;
+RX   PubMed=27807467;
+RX   PubMed=28192450;
+RX   PubMed=28196595;
+RX   PubMed=28601559;
+RX   PubMed=28683746;
+RX   PubMed=28854368;
+RX   PubMed=29101300;
+RX   PubMed=29444439;
+RX   PubMed=30894373;
+RX   PubMed=31068700;
+RX   PubMed=31978347;
+WW   https://en.wikipedia.org/wiki/HCT116_cells
+WW   https://dtp.cancer.gov/discovery_development/nci-60/cell_list.htm
+WW   https://physics.cancer.gov/docs/bioresource/colorectal/NCI-PBCF-CCL247_HCT116_SOP-508.pdf
+WW   https://strap.nci.nih.gov/celline_detail.php?sample_id=17
+WW   http://www.pawefish.path.cam.ac.uk/ColonCellLineDescriptions/HCT116.html
+WW   http://genome.ucsc.edu/ENCODE/protocols/cell/human/HCT-116_protocol.pdf
+WW   http://www.thermofisher.com/ch/en/home/technical-resources/cell-lines/h/cell-lines-detail-88.html
+WW   http://tcpaportal.org/mclp/
+WW   http://www.cellresource.cn/fdetail.aspx?id=158
+WW   http://www.cellresource.cn/fdetail.aspx?id=331
+WW   http://www.cellresource.cn/fdetail.aspx?id=667
+WW   http://www.cellresource.cn/fdetail.aspx?id=3307
+CC   Part of: AstraZeneca Colorectal cell line (AZCL) panel.
+CC   Part of: Cancer Cell Line Encyclopedia (CCLE) project.
+CC   Part of: COSMIC cell lines project.
+CC   Part of: ENCODE project common cell types; tier 3.
+CC   Part of: FGFR genetic alteration cell panel (ATCC TCP-1034).
+CC   Part of: JFCR39 cancer cell line panel.
+CC   Part of: KuDOS 95 cell line panel.
+CC   Part of: MD Anderson Cell Lines Project.
+CC   Part of: NCI RAS program mutant KRAS cell line panel.
+CC   Part of: NCI-60 cancer cell line panel.
+CC   Doubling time: 36 hours (PubMed=25984343); 17.1 hours (PubMed=22628656); 22 hours (PubMed=23546019); 17.4 hours (NCI-DTP); ~25-48 hours (DSMZ); ~21 hours (PBCF).
+CC   HLA typing: A*01,02; B*18,45:01; C*05,07; DPB1*03:01:01,04:02; DQB1*02,03 (PubMed=15748285).
+CC   HLA typing: A*01:01,02:01; B*45:01,18:01; C*05:01,07:01; DQA1*05:02,05:02; DQB1*03:09,02:02; DRB1*03:05,11:02 (PubMed=25960936).
+CC   HLA typing: A*01:01,02:01; B*45:01; C*05:01,07:01 (PubMed=9178645).
+CC   Microsatellite instability: Instable (MSI-high) (PubMed=9000147; PubMed=10674020; PubMed=23671654; PubMed=24042735; PubMed=25926053; PubMed=28683746; PubMed=31068700; Sanger).
+CC   Sequence variation: Homozygous for ACVR2A p.Lys437fs*5 (c.1310delA) (PubMed=12615714).
+CC   Sequence variation: Heterozygous for BRCA2 p.Ile2675fs*6 (c.8021_8022insA) (PubMed=17088437).
+CC   Sequence variation: Heterozygous for CDKN2A p.Arg24fs*20 (c.68_69insG) and p.Glu74fs*15 (c.220delG) (PubMed=17088437).
+CC   Sequence variation: Heterozygous for CTNNB1 p.Ser45del (c.133_135delTCT) (PubMed=9294210; PubMed=24755471; ATCC).
+CC   Sequence variation: Hemizygous for EP300 c.6294delA (PubMed=10700188).
+CC   Sequence variation: Heterozygous for KRAS p.Gly13Asp (c.38G>A) (PubMed=12068308; PubMed=17088437; PubMed=20570890; PubMed=24755471; PubMed=28683746).
+CC   Sequence variation: Heterozygous for PIK3CA p.His1047Arg (c.3140A>G) (PubMed=17088437; PubMed=20570890; PubMed=24755471; PubMed=28683746).
+CC   Sequence variation: Homozygous for TGFBR2 p.Lys128Serfs*35 (c.383delA) (PubMed=12615714).
+CC   Sequence variation: Has no TP53 mutation (PubMed=9715273; PubMed=15900046; PubMed=16418264).
+CC   Omics: Array-based CGH.
+CC   Omics: CNV analysis.
+CC   Omics: Deep exome analysis.
+CC   Omics: Deep phosphoproteome analysis.
+CC   Omics: Deep proteome analysis.
+CC   Omics: Deep quantitative phosphoproteome analysis.
+CC   Omics: Deep quantitative proteome analysis.
+CC   Omics: Deep RNAseq analysis.
+CC   Omics: DNA methylation analysis.
+CC   Omics: Fluorescence phenotype profiling.
+CC   Omics: H3K4me3 ChIP-seq epigenome analysis.
+CC   Omics: HLA class I peptidome analysis by proteomics.
+CC   Omics: lncRNA expression profiling.
+CC   Omics: Metabolome analysis.
+CC   Omics: miRNA expression profiling.
+CC   Omics: N-glycan profiling.
+CC   Omics: Protein expression by reverse-phase protein arrays.
+CC   Omics: shRNA library screening.
+CC   Omics: SNP array analysis.
+CC   Omics: Transcriptome analysis.
+CC   Genome ancestry: African=0%; Native American=0.08%; East Asian, North=1.16%; East Asian, South=0%; South Asian=0.97%; European, North=64.85%; European, South=32.93% (PubMed=30894373).
+CC   Misspelling: HCT-166; In BTO BTO:0004743, now obsoleted.
+CC   Misspelling: HTC 116; Occasionally.
+CC   Misspelling: HTC-116; Occasionally.
+CC   Misspelling: Htc-116; Occasionally.
+CC   Misspelling: HTC116; Occasionally.
+CC   Misspelling: HTC1116; Occasionally.
+ST   Source(s): AddexBio; ATCC; CCRID; CLS; Cosmic-CLP; DSMZ; ECACC; KCLB; PubMed=11416159; PubMed=19372543; PubMed=25877200; PubMed=25926053
+ST   Amelogenin: X,Y (AddexBio; ATCC; CCRID; CLS; Cosmic-CLP; ECACC; KCLB)
+ST   Amelogenin: X (DSMZ; PubMed=11416159; PubMed=19372543; PubMed=25877200; PubMed=25926053)
+ST   CSF1PO: 7,10 (AddexBio; ATCC; CCRID; CLS; DSMZ; ECACC; KCLB; PubMed=11416159; PubMed=19372543; PubMed=25877200; PubMed=25926053)
+ST   CSF1PO: 7,9,10,11 (Cosmic-CLP)
+ST   D13S317: 10,12
+ST   D16S539: 11,13 (AddexBio; ATCC; CCRID; CLS; Cosmic-CLP; ECACC; PubMed=19372543; PubMed=25877200; PubMed=25926053)
+ST   D16S539: 11,12,13 (DSMZ)
+ST   D18S51: 16,17 (CCRID; PubMed=19372543)
+ST   D18S51: 17 (PubMed=25877200)
+ST   D19S433: 12,13
+ST   D21S11: 29,30
+ST   D2S1338: 16
+ST   D3S1358: 12,18,19 (CCRID)
+ST   D3S1358: 12,19 (PubMed=19372543; PubMed=25877200)
+ST   D5S818: 10,11
+ST   D7S820: 11,12
+ST   D8S1179: 12,14
+ST   FGA: 18,23
+ST   Penta D: 9,13
+ST   Penta E: 13,14
+ST   TH01: 8,9 (AddexBio; ATCC; CCRID; CLS; Cosmic-CLP; ECACC; KCLB; PubMed=11416159; PubMed=19372543; PubMed=25877200)
+ST   TH01: 8 (DSMZ)
+ST   TH01: 8,9,10 (PubMed=25926053)
+ST   TPOX: 8,9 (AddexBio; ATCC; CCRID; CLS; Cosmic-CLP)
+ST   TPOX: 8 (DSMZ; ECACC; KCLB; PubMed=19372543; PubMed=25877200; PubMed=25926053)
+ST   vWA: 17,22 (AddexBio; ATCC; CCRID; CLS; Cosmic-CLP; ECACC; KCLB; PubMed=25877200; PubMed=25926053)
+ST   vWA: 17,21 (DSMZ)
+ST   vWA: 17 (PubMed=11416159; PubMed=19372543)
+DI   NCIt; C4910; Colon carcinoma
+OX   NCBI_TaxID=9606; ! Homo sapiens
+OI   CVCL_R729 ! HCT 116a
+OI   CVCL_R730 ! HCT 116b
+SX   Male
+AG   48Y
+CA   Cancer cell line
+DT   Created: 04-04-12; Last updated: 12-03-20; Version: 34
+//
+ID   HEK293
+AC   CVCL_0045
+SY   Hek293; HEK-293; HEK/293; HEK 293; HEK;293; 293; 293 HEK; 293 Ad5; Human Embryonic Kidney 293
+DR   BTO; BTO:0000007
+DR   CLO; CLO_0001230
+DR   CLO; CLO_0050903
+DR   EFO; EFO_0001182
+DR   MCCL; MCC:0000006
+DR   CLDB; cl45
+DR   CLDB; cl46
+DR   CLDB; cl47
+DR   CLDB; cl7133
+DR   4DN; 4DNSRVF4XB1F
+DR   AddexBio; T0011001/76
+DR   ATCC; CRL-1573
+DR   ATCC; PTA-4488
+DR   BCRC; 60019
+DR   BCRJ; 0009
+DR   BEI_Resources; NR-9313
+DR   BioSample; SAMN03471398
+DR   BioSample; SAMN03473347
+DR   BioSamples; SAMEA2018185
+DR   CCLV; CCLV-RIE 0197
+DR   CCRID; 3111C0001CCC000010
+DR   CCRID; 3111C0002000000005
+DR   CCRID; 3131C0001000200001
+DR   CCRID; 3131C0001000200018
+DR   CCRID; 3142C0001000000066
+DR   CCTCC; GDC0067
+DR   ChEMBL-Cells; CHEMBL3307715
+DR   ChEMBL-Targets; CHEMBL614818
+DR   CLS; 300192/p777_HEK293
+DR   Cosmic; 2520629
+DR   Cosmic; 2560255
+DR   DSMZ; ACC-305
+DR   eagle-i; hawaii.eagle-i.net/i/0000012b-5664-9d02-2f73-b43980000000
+DR   ECACC; 85120602
+DR   ENCODE; ENCBS022BLS
+DR   ENCODE; ENCBS037XHS
+DR   ENCODE; ENCBS209KHO
+DR   ENCODE; ENCBS253HIE
+DR   ENCODE; ENCBS264HQL
+DR   ENCODE; ENCBS375ENC
+DR   ENCODE; ENCBS393ENC
+DR   ENCODE; ENCBS421ENC
+DR   ENCODE; ENCBS439ENC
+DR   ENCODE; ENCBS479AAA
+DR   ENCODE; ENCBS480AAA
+DR   ENCODE; ENCBS481AAA
+DR   ENCODE; ENCBS482AAA
+DR   ENCODE; ENCBS483AAA
+DR   ENCODE; ENCBS484AAA
+DR   ENCODE; ENCBS486AAA
+DR   ENCODE; ENCBS522ENC
+DR   ENCODE; ENCBS523ENC
+DR   ENCODE; ENCBS613RZL
+DR   ENCODE; ENCBS906GPZ
+DR   FCS-free; 6-2-7-1-4-3
+DR   FCS-free; 6-2-42-1-8-11
+DR   FCS-free; 6-2-45-1-8-3
+DR   FCS-free; 6-2-46-1-8-11
+DR   FCS-free; 6-2-284-1-4-3
+DR   FCS-free; 6-2-345-1-4-12
+DR   FCS-free; 6-2-372-1-16-3
+DR   FCS-free; 6-2-381-1-4-3
+DR   FCS-free; 6-2-409-1-16-12
+DR   FCS-free; 6-2-421-2-4-7
+DR   FCS-free; 6-2-503-1-3-3
+DR   FCS-free; 6-2-533-1-4-12
+DR   FCS-free; 6-2-570-3-17-1
+DR   FCS-free; 6-2-586-1-18-2
+DR   GEO; GSM580027
+DR   GEO; GSM580028
+DR   GEO; GSM635701
+DR   GEO; GSM635702
+DR   GEO; GSM635703
+DR   GEO; GSM635704
+DR   GEO; GSM651571
+DR   GEO; GSM945256
+DR   GEO; GSM945288
+DR   GEO; GSM1374525
+DR   IBRC; C10139
+DR   ICLC; HTL03003
+DR   IZSLER; BS CL 129
+DR   JCRB; JCRB9068
+DR   KCB; KCB 200408YJ
+DR   KCB; KCB 200971YJ
+DR   KCLB; 21573
+DR   Lonza; 46
+DR   MetaboLights; MTBLS102
+DR   MetaboLights; MTBLS156
+DR   MetaboLights; MTBLS737
+DR   NCBI_Iran; C497
+DR   NIH-ARP; 103-306
+DR   PRIDE; PXD000589
+DR   PRIDE; PXD000623
+DR   PRIDE; PXD000680
+DR   PRIDE; PXD000933
+DR   PRIDE; PXD000953
+DR   PRIDE; PXD001468
+DR   PRIDE; PXD001511
+DR   PRIDE; PXD001711
+DR   PRIDE; PXD001863
+DR   PRIDE; PXD002383
+DR   PRIDE; PXD002389
+DR   PRIDE; PXD002395
+DR   PRIDE; PXD002601
+DR   PRIDE; PXD002613
+DR   PRIDE; PXD002676
+DR   PRIDE; PXD003310
+DR   PRIDE; PXD003370
+DR   PRIDE; PXD003700
+DR   PRIDE; PXD003896
+DR   PRIDE; PXD005535
+DR   PRIDE; PXD005955
+DR   PRIDE; PXD009668
+DR   PRIDE; PXD014771
+DR   RCB; RCB1637
+DR   TKG; TKG 0306
+DR   TOKU-E; 31
+DR   Wikidata; Q489618
+RX   PubMed=886304;
+RX   PubMed=9217065;
+RX   PubMed=15218237;
+RX   PubMed=21214938;
+RX   PubMed=21269460;
+RX   PubMed=21502043;
+RX   PubMed=22278370;
+RX   PubMed=23325432;
+RX   PubMed=24618588;
+RX   PubMed=25182477;
+RX   PubMed=25807930;
+RX   PubMed=25894527;
+RX   PubMed=25903999;
+RX   PubMed=25960936;
+RX   PubMed=27233776;
+RX   PubMed=27577262;
+RX   PubMed=28196595;
+RX   PubMed=29660373;
+RX   PubMed=30260228;
+WW   https://en.wikipedia.org/wiki/HEK_293_cells
+WW   http://www.hek293.com/
+WW   http://hek293genome.org/v2/
+WW   http://www.cells-talk.com/index.php/page/copelibrary?key=HEK293
+WW   http://www.proteinatlas.org/learn/cellines
+WW   http://141.61.102.20/mxdb/project/show/9191407937500
+WW   http://fluoview.magnet.fsu.edu/gallery/cells/hek/hekcells.html
+WW   http://en.vircell.com/products/293-cell-line/
+WW   http://www.thermofisher.com/ch/en/home/technical-resources/cell-lines/2/cell-lines-detail-176.html
+WW   https://web.archive.org/web/20140910211526/http://webserver.mbi.ufl.edu/~shaw/293.html
+WW   https://cell-map.org/
+WW   http://tcpaportal.org/mclp/
+WW   http://www.cellresource.cn/fdetail.aspx?id=10
+WW   http://www.cellresource.cn/fdetail.aspx?id=377
+WW   http://www.cellresource.cn/fdetail.aspx?id=461
+WW   http://www.cellresource.cn/fdetail.aspx?id=477
+WW   http://www.cellresource.cn/fdetail.aspx?id=834
+CC   Part of: ENCODE project common cell types; tier 3.
+CC   Part of: MD Anderson Cell Lines Project.
+CC   Doubling time: ~30 hours (CLS); ~24-30 hours (DSMZ).
+CC   HLA typing: A*02:01,03:01; B*07:02,07:02/35:08; C*07:02,07:02; DQA1*01:02,01:02; DQB1*06:02,06:02; DRB1*15:01,15:01 (PubMed=25960936).
+CC   Transformant: NCBI_TaxID; 28285; Adenovirus 5.
+CC   Omics: Cell surface proteome.
+CC   Omics: Deep antibody staining analysis.
+CC   Omics: Deep proteome analysis.
+CC   Omics: Deep RNAseq analysis.
+CC   Omics: Genome sequenced.
+CC   Omics: DNA methylation analysis.
+CC   Omics: H3K4me3 ChIP-seq epigenome analysis.
+CC   Omics: Metabolome analysis.
+CC   Omics: Methylated arginine analysis by proteomics.
+CC   Omics: Myristoylated proteins analysis by proteomics.
+CC   Omics: Protein expression by reverse-phase protein arrays.
+CC   Omics: Transcriptome analysis.
+CC   Omics: Virome analysis using proteomics.
+CC   Misspelling: HECK293; Occasionally.
+CC   Misspelling: HEK239; Occasionally.
+ST   Source(s): ATCC; CCRID; CLS; DSMZ; ECACC; JCRB; KCLB; PubMed=11416159; PubMed=15218237; RCB; TKG
+ST   Amelogenin: X
+ST   CSF1PO: 11,12
+ST   D13S317: 12,14 (ATCC; CCRID; CLS; DSMZ; ECACC; KCLB; PubMed=11416159; PubMed=15218237; RCB)
+ST   D13S317: 12 (JCRB; TKG)
+ST   D16S539: 9,13 (ATCC; CCRID; CLS; ECACC; JCRB; RCB; TKG)
+ST   D16S539: 9 (DSMZ)
+ST   D18S51: 17,18 (CCRID; PubMed=11416159)
+ST   D18S51: 18 (CLS)
+ST   D18S51: 17 (PubMed=15218237)
+ST   D19S433: 15,18 (CCRID)
+ST   D19S433: 18 (CLS)
+ST   D21S11: 28,30.2
+ST   D2S1338: 19
+ST   D3S1358: 15,17
+ST   D5S818: 8,9
+ST   D7S820: 11,12
+ST   D8S1179: 12,14
+ST   FGA: 23
+ST   Penta D: 9,10
+ST   Penta E: 7,15
+ST   TH01: 7,9.3
+ST   TPOX: 11
+ST   vWA: 16,19
+OX   NCBI_TaxID=9606; ! Homo sapiens
+SX   Female
+AG   Fetus
+CA   Transformed cell line
+DT   Created: 04-04-12; Last updated: 19-12-19; Version: 31
+//
+ID   HEK293T
+AC   CVCL_0063
+SY   Hek293T; HEK-293T; HEK 293T; HEK-293-T; HEK 293 T; 293-T; 293 T; 293T; Human Embryonic Kidney 293T; 293tsA1609neo
+DR   BTO; BTO:0002181
+DR   CLO; CLO_0050894
+DR   EFO; EFO_0001082
+DR   EFO; EFO_0001184
+DR   CLDB; cl7154
+DR   AddexBio; T0011002/445
+DR   ATCC; CRL-3216
+DR   BioSample; SAMN01821609
+DR   BioSample; SAMN03473454
+DR   BioSamples; SAMEA2168958
+DR   BioSamples; SAMEA2536418
+DR   BioSamples; SAMEA2536419
+DR   CCLV; CCLV-RIE 1018
+DR   CCRID; 3111C0001CCC000091
+DR   CCRID; 3111C0002000000112
+DR   CCRID; 3131C0001000200017
+DR   CCRID; 3142C0001000001715
+DR   CCTCC; GDC0187
+DR   ChEMBL-Cells; CHEMBL3706569
+DR   ChEMBL-Targets; CHEMBL3706568
+DR   Cosmic; 1326280
+DR   Cosmic; 2440479
+DR   DSMZ; ACC-635
+DR   eagle-i; hawaii.eagle-i.net/i/0000012b-5665-c7e2-2f73-b43980000000
+DR   ECACC; 12022001
+DR   ENCODE; ENCBS276VDW
+DR   ENCODE; ENCBS319KKV
+DR   ENCODE; ENCBS323RYE
+DR   ENCODE; ENCBS582KZL
+DR   ENCODE; ENCBS634AAA
+DR   ENCODE; ENCBS986WKD
+DR   FCS-free; 6-2-482-1-4-3
+DR   GEO; GSM1008573
+DR   IBRC; C10683
+DR   ICLC; HTL04001
+DR   KCB; KCB 200744YJ
+DR   Lonza; 504
+DR   NCBI_Iran; C498
+DR   NCBI_Iran; C644
+DR   PRIDE; PXD000593
+DR   PRIDE; PXD001062
+DR   PRIDE; PXD001165
+DR   PRIDE; PXD001609
+DR   PRIDE; PXD004452
+DR   PRIDE; PXD006698
+DR   PRIDE; PXD012357
+DR   PRIDE; PXD013232
+DR   RCB; RCB2202
+DR   TOKU-E; 3537
+DR   Wikidata; Q27546876
+RX   PubMed=3031469;
+RX   PubMed=15900046;
+RX   PubMed=25182477;
+RX   PubMed=26694163;
+RX   PubMed=28196595;
+RX   PubMed=28601559;
+WW   https://en.wikipedia.org/wiki/293T
+WW   http://genome.ucsc.edu/ENCODE/protocols/cell/human/HEK293T_Crawford_protocol.pdf
+WW   http://hek293genome.org/v2/
+WW   http://www.thermofisher.com/ch/en/home/technical-resources/cell-lines/2/cell-lines-detail-153.html
+WW   https://www.fishersci.com/shop/products/hek293t-cell-line-hcl4517/nc0260915
+WW   http://www.genhunter.com/products/293t-cells.html
+WW   http://tcpaportal.org/mclp/
+WW   http://www.cellresource.cn/fdetail.aspx?id=91
+WW   http://www.cellresource.cn/fdetail.aspx?id=476
+WW   http://www.cellresource.cn/fdetail.aspx?id=2182
+WW   http://www.cellresource.cn/fdetail.aspx?id=3295
+CC   Part of: ENCODE project common cell types; tier 3.
+CC   Part of: MD Anderson Cell Lines Project.
+CC   Doubling time: ~24-30 hours (DSMZ).
+CC   Transfected with: UniProtKB; P00552; Transposon Tn5 neo.
+CC   Transformant: NCBI_TaxID; 28285; Adenovirus 5.
+CC   Transformant: NCBI_TaxID; 1891767; Simian virus 40 (SV40) [tsA].
+CC   Omics: Deep proteome analysis.
+CC   Omics: Genome sequenced.
+CC   Omics: miRNA expression profiling.
+CC   Omics: Protein expression by reverse-phase protein arrays.
+CC   Misspelling: HECK293T; Occasionally.
+CC   Misspelling: HEK239T; Occasionally.
+ST   Source(s): ATCC; CCRID; DSMZ; ECACC; RCB
+ST   Amelogenin: X
+ST   CSF1PO: 11,12
+ST   D13S317: 12 (ECACC)
+ST   D13S317: 12,14 (ATCC; CCRID; DSMZ; RCB)
+ST   D16S539: 9,13
+ST   D18S51: 17,18
+ST   D19S433: 18
+ST   D21S11: 28,30.2
+ST   D2S1338: 19
+ST   D3S1358: 15,16,17
+ST   D5S818: 8,9
+ST   D7S820: 11
+ST   D8S1179: 12,14
+ST   FGA: 23
+ST   Penta D: 9,10
+ST   Penta E: 7,15
+ST   TH01: 7,9.3
+ST   TPOX: 11
+ST   vWA: 16,19
+OX   NCBI_TaxID=9606; ! Homo sapiens
+HI   CVCL_0045 ! HEK293
+SX   Female
+AG   Fetus
+CA   Transformed cell line
+DT   Created: 04-04-12; Last updated: 19-12-19; Version: 29
+//
+ID   HeLa
+AC   CVCL_0030
+SY   HELA; Hela; He La; He-La; Henrietta Lacks cells; Helacyton gartleri
+DR   BTO; BTO:0000567
+DR   CLO; CLO_0003684
+DR   CLO; CLO_0050910
+DR   EFO; EFO_0001185
+DR   MCCL; MCC:0000219
+DR   CLDB; cl1594
+DR   CLDB; cl1595
+DR   CLDB; cl1596
+DR   CLDB; cl1597
+DR   CLDB; cl1599
+DR   CLDB; cl1600
+DR   CLDB; cl1601
+DR   CLDB; cl1603
+DR   AddexBio; C0008001/44
+DR   ArrayExpress; E-MTAB-2706
+DR   ArrayExpress; E-MTAB-3610
+DR   ATCC; CCL-2
+DR   ATCC; CRM-CCL-2
+DR   ATCC; CRL-7923
+DR   BCRC; 60005
+DR   BCRJ; 0100
+DR   BioSample; SAMN03471148
+DR   BioSample; SAMN03472333
+DR   BioSample; SAMN10989629
+DR   CCLE; HELA_CERVIX
+DR   CCLV; CCLV-RIE 0082
+DR   CCRID; 3111C0001CCC000011
+DR   CCRID; 3111C0001CCC000332
+DR   CCRID; 3111C0002000000057
+DR   CCRID; 3131C0001000700019
+DR   CCRID; 3131C0001000700187
+DR   CCRID; 3142C0001000000009
+DR   CCRID; 3153C0001000000007
+DR   CCTCC; GDC0009
+DR   Cell_Model_Passport; SIDM00846
+DR   ChEMBL-Cells; CHEMBL3308376
+DR   ChEMBL-Targets; CHEMBL399
+DR   CLS; 300194/p772_HeLa
+DR   Cosmic; 760219
+DR   Cosmic; 760490
+DR   Cosmic; 801357
+DR   Cosmic; 809231
+DR   Cosmic; 877477
+DR   Cosmic; 911999
+DR   Cosmic; 925354
+DR   Cosmic; 928907
+DR   Cosmic; 944113
+DR   Cosmic; 1019309
+DR   Cosmic; 1057766
+DR   Cosmic; 1071911
+DR   Cosmic; 1131525
+DR   Cosmic; 1193029
+DR   Cosmic; 1201779
+DR   Cosmic; 1324208
+DR   Cosmic; 1336880
+DR   Cosmic; 1571796
+DR   Cosmic; 2301539
+DR   Cosmic; 2660190
+DR   Cosmic-CLP; 1298134
+DR   DepMap; ACH-001086
+DR   DSMZ; ACC-57
+DR   ECACC; 93021013
+DR   FCS-free; 44-2-47-1-8-9
+DR   GDSC; 1298134
+DR   GEO; GSM113863
+DR   GEO; GSM226739
+DR   GEO; GSM226875
+DR   GEO; GSM253298
+DR   GEO; GSM436128
+DR   GEO; GSM436129
+DR   GEO; GSM501788
+DR   GEO; GSM723055
+DR   GEO; GSM723056
+DR   GEO; GSM1088663
+DR   GEO; GSM1088664
+DR   GEO; GSM1088665
+DR   GEO; GSM1088666
+DR   GEO; GSM1374528
+DR   GEO; GSM1669875
+DR   ICLC; HTL95023
+DR   IGRhCellID; HeLA
+DR   IZSLER; BS TCL 20
+DR   JCRB; JCRB9004
+DR   KCB; KCB 86019YJ
+DR   KCB; KCB 90024YJ
+DR   KCLB; 10002
+DR   LINCS_HMS; 50061
+DR   LINCS_LDP; LCL-1512
+DR   Lonza; 51
+DR   MeSH; D006367
+DR   NCBI_Iran; C115
+DR   NIH-ARP; 153-364
+DR   PharmacoDB; HeLa_536_2019
+DR   PRIDE; PRD000007
+DR   PRIDE; PRD000032
+DR   PRIDE; PRD000123
+DR   PRIDE; PRD000124
+DR   PRIDE; PRD000345
+DR   PRIDE; PRD000376
+DR   PRIDE; PRD000525
+DR   PRIDE; PRD000526
+DR   PRIDE; PRD000527
+DR   PRIDE; PXD000013
+DR   PRIDE; PXD000243
+DR   PRIDE; PXD000252
+DR   PRIDE; PXD000279
+DR   PRIDE; PXD000396
+DR   PRIDE; PXD000474
+DR   PRIDE; PXD000589
+DR   PRIDE; PXD000661
+DR   PRIDE; PXD000680
+DR   PRIDE; PXD000759
+DR   PRIDE; PXD000883
+DR   PRIDE; PXD000895
+DR   PRIDE; PXD000900
+DR   PRIDE; PXD000953
+DR   PRIDE; PXD000954
+DR   PRIDE; PXD000999
+DR   PRIDE; PXD001047
+DR   PRIDE; PXD001118
+DR   PRIDE; PXD001154
+DR   PRIDE; PXD001175
+DR   PRIDE; PXD001249
+DR   PRIDE; PXD001258
+DR   PRIDE; PXD001259
+DR   PRIDE; PXD001278
+DR   PRIDE; PXD001305
+DR   PRIDE; PXD001374
+DR   PRIDE; PXD001381
+DR   PRIDE; PXD001396
+DR   PRIDE; PXD001441
+DR   PRIDE; PXD001541
+DR   PRIDE; PXD001548
+DR   PRIDE; PXD001574
+DR   PRIDE; PXD001660
+DR   PRIDE; PXD001781
+DR   PRIDE; PXD001798
+DR   PRIDE; PXD001805
+DR   PRIDE; PXD001806
+DR   PRIDE; PXD001810
+DR   PRIDE; PXD001863
+DR   PRIDE; PXD001907
+DR   PRIDE; PXD002001
+DR   PRIDE; PXD002039
+DR   PRIDE; PXD002066
+DR   PRIDE; PXD002252
+DR   PRIDE; PXD002277
+DR   PRIDE; PXD002378
+DR   PRIDE; PXD002383
+DR   PRIDE; PXD002395
+DR   PRIDE; PXD002572
+DR   PRIDE; PXD002591
+DR   PRIDE; PXD002704
+DR   PRIDE; PXD002844
+DR   PRIDE; PXD002880
+DR   PRIDE; PXD003186
+DR   PRIDE; PXD003209
+DR   PRIDE; PXD003258
+DR   PRIDE; PXD003370
+DR   PRIDE; PXD003503
+DR   PRIDE; PXD003530
+DR   PRIDE; PXD003560
+DR   PRIDE; PXD003792
+DR   PRIDE; PXD003813
+DR   PRIDE; PXD003909
+DR   PRIDE; PXD003913
+DR   PRIDE; PXD003917
+DR   PRIDE; PXD003924
+DR   PRIDE; PXD004182
+DR   PRIDE; PXD004271
+DR   PRIDE; PXD004273
+DR   PRIDE; PXD004452
+DR   PRIDE; PXD004613
+DR   PRIDE; PXD004736
+DR   PRIDE; PXD004900
+DR   PRIDE; PXD004914
+DR   PRIDE; PXD004933
+DR   PRIDE; PXD004934
+DR   PRIDE; PXD004940
+DR   PRIDE; PXD004995
+DR   PRIDE; PXD005018
+DR   PRIDE; PXD005107
+DR   PRIDE; PXD005181
+DR   PRIDE; PXD005346
+DR   PRIDE; PXD005349
+DR   PRIDE; PXD005366
+DR   PRIDE; PXD005509
+DR   PRIDE; PXD005572
+DR   PRIDE; PXD005712
+DR   PRIDE; PXD005955
+DR   PRIDE; PXD006112
+DR   PRIDE; PXD006293
+DR   PRIDE; PXD012188
+DR   RCB; RCB0007
+DR   RCB; RCB3680
+DR   SKY/M-FISH/CGH; 5351
+DR   TKG; TKG 0331
+DR   TOKU-E; 1434
+DR   Wikidata; Q847482
+RX   CelloPub=CLPUB00047;
+RX   CelloPub=CLPUB00262;
+RX   CelloPub=CLPUB00376;
+RX   CelloPub=CLPUB00377;
+RX   CelloPub=CLPUB00468;
+RX   CelloPub=CLPUB00507;
+RX   DOI=10.1007/978-1-4757-1647-4_13;
+RX   PubMed=1522048;
+RX   PubMed=2990217;
+RX   PubMed=3028716;
+RX   PubMed=3371749;
+RX   PubMed=3518877;
+RX   PubMed=4942173;
+RX   PubMed=5668122;
+RX   PubMed=6935474;
+RX   PubMed=8380785;
+RX   PubMed=9892199;
+RX   PubMed=12001993;
+RX   PubMed=12661003;
+RX   PubMed=12793746;
+RX   PubMed=13052828;
+RX   PubMed=13261081;
+RX   PubMed=14031339;
+RX   PubMed=14185313;
+RX   PubMed=15302935;
+RX   PubMed=15531914;
+RX   PubMed=15901131;
+RX   PubMed=16589695;
+RX   PubMed=17311676;
+RX   PubMed=19722756;
+RX   PubMed=19941903;
+RX   PubMed=21269460;
+RX   PubMed=21937730;
+RX   PubMed=22068331;
+RX   PubMed=22278370;
+RX   PubMed=23205564;
+RX   PubMed=23336012;
+RX   PubMed=23925224;
+RX   PubMed=23925245;
+RX   PubMed=24134916;
+RX   PubMed=24618588;
+RX   PubMed=24696503;
+RX   PubMed=25485619;
+RX   PubMed=25807930;
+RX   PubMed=25894527;
+RX   PubMed=25960936;
+RX   PubMed=26554430;
+RX   PubMed=27397505;
+RX   PubMed=28078501;
+RX   PubMed=28196595;
+RX   PubMed=28601559;
+RX   PubMed=29156801;
+RX   PubMed=30175587;
+RX   PubMed=30787054;
+RX   PubMed=30894373;
+RX   PubMed=31068700;
+RX   PubMed=31433507;
+WW   https://en.wikipedia.org/wiki/HeLa
+WW   http://www.proteinatlas.org/learn/cellines
+WW   http://141.61.102.20/mxdb/project/show/9191407937500
+WW   http://micro.magnet.fsu.edu/primer/techniques/fluorescence/gallery/cells/hela/helacells.html
+WW   http://www.lacksfamily.net/
+WW   http://en.vircell.com/products/hela-cell-line/
+WW   http://www.thermofisher.com/ch/en/home/technical-resources/cell-lines/h/cell-lines-detail-35.html
+WW   https://www.cynthiaverspaget.com/the-anarchy-cell-line
+WW   http://genomesunzipped.org/2013/03/henrietta-lackss-genome-sequence-has-been-publicly-available-for-years.php
+WW   https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000640.v4.p1
+WW   http://tcpaportal.org/mclp/
+WW   http://www.cellresource.cn/fdetail.aspx?id=11
+WW   http://www.cellresource.cn/fdetail.aspx?id=332
+WW   http://www.cellresource.cn/fdetail.aspx?id=429
+WW   http://www.cellresource.cn/fdetail.aspx?id=590
+WW   http://www.cellresource.cn/fdetail.aspx?id=777
+WW   http://www.cellresource.cn/fdetail.aspx?id=1281
+WW   http://www.cellresource.cn/fdetail.aspx?id=1697
+CC   Group: Space-flown cell line (cellonaut).
+CC   Part of: Cancer Cell Line Encyclopedia (CCLE) project.
+CC   Part of: COSMIC cell lines project.
+CC   Part of: MD Anderson Cell Lines Project.
+CC   Part of: Naval Biosciences Laboratory (NBL) collection (transferred to ATCC in 1982).
+CC   Characteristics: HeLa has 5 five HPV18 integration sites: three on normal chromosomes 8 at 8q24 and two on derivative chromosomes, der(5)t(5;22;8)(q11;q11q13;q24) and der(22)t(8;22)(q24;q13).
+CC   Doubling time: 1.3 days (PubMed=29156801); ~48 hours (DSMZ).
+CC   HLA typing: A*68:02,03:19; B*15:03,15:03; C*12:03,12:03; DRB1*01:02,01:02 (PubMed=25960936).
+CC   Microsatellite instability: Stable (MSS) (PubMed=12661003; Sanger).
+CC   Transformant: NCBI_TaxID; 333761; Human papillomavirus type 18 (HPV18).
+CC   Omics: Cell surface proteome.
+CC   Omics: CNV analysis.
+CC   Omics: Deep antibody staining analysis.
+CC   Omics: Deep exome analysis.
+CC   Omics: Deep membrane proteome analysis.
+CC   Omics: Deep phosphoproteome analysis.
+CC   Omics: Deep proteome analysis.
+CC   Omics: Deep quantitative proteome analysis.
+CC   Omics: Deep RNAseq analysis.
+CC   Omics: DNA methylation analysis.
+CC   Omics: Genome sequenced.
+CC   Omics: Glycoproteome analysis by proteomics.
+CC   Omics: Myristoylated proteins analysis by proteomics.
+CC   Omics: Protein expression by reverse-phase protein arrays.
+CC   Omics: SNP array analysis.
+CC   Omics: Transcriptome analysis.
+CC   Omics: Virome analysis using proteomics.
+CC   Genome ancestry: African=64.74%; Native American=0.77%; East Asian, North=2.26%; East Asian, South=0%; South Asian=0%; European, North=19.45%; European, South=12.78% (PubMed=30894373).
+CC   Anecdotal: The HeLa cell line which was established in February 1951 is the oldest human immortal cell line.
+CC   Anecdotal: The fascinating story of the HeLa cell line and of Henrietta Lacks from whom these cells originate are described in the book of Rebecca Skloot (CelloPub=CLPUB00377).
+CC   Anecdotal: The HeLa cell line and its story inspired Australian artist Cynthia Verspaget to embark in 2003 on a artistic project 'The Anarchy Cell Line' (TAnCL) where she mixed her blood with HeLa cells. This work later spawned a PhD thesis (CelloPub=CLPUB00376) where among other things she makes the observation that two main taxonomical distinctions present in the zombie, living/dead and human/nonhuman, are also present in the HeLa cell line.
+CC   Anecdotal: Was flown since the 1960s on at least ten different space missions: Korabl-Sputnik-2, Vostok-1, Vostok-4, Vostok-5 and Vostok-6, Voshkod 1 and Zond-5, Discoverer XVIII, Progress M-35/Mir and Shuttle STS-89.
+CC   Miscellaneous: HeLa is the most frequent contributor to cell lines contamination.
+CC   Discontinued: ATCC; CRL-7923; true.
+ST   Source(s): AddexBio; ATCC; CCRID; CLS; Cosmic-CLP; DSMZ; ECACC; JCRB; KCLB; PubMed=11416159; PubMed=25877200; PubMed=29156801; RCB; TKG
+ST   Amelogenin: X
+ST   CSF1PO: 9,10
+ST   D13S317: 12,13.3 (AddexBio; ATCC; CCRID; DSMZ; JCRB; KCLB; PubMed=25877200; PubMed=29156801; TKG)
+ST   D13S317: 13,13.3 (CLS)
+ST   D13S317: 12 (Cosmic-CLP; RCB)
+ST   D13S317: 12,14 (ECACC)
+ST   D16S539: 9,10
+ST   D18S51: 16
+ST   D19S433: 13,14
+ST   D21S11: 27 (CLS)
+ST   D21S11: 27,28 (CCRID; DSMZ; PubMed=25877200)
+ST   D2S1338: 17
+ST   D3S1358: 15,18
+ST   D5S818: 11,12
+ST   D7S820: 8,12
+ST   D8S1179: 12,13
+ST   FGA: 18,21
+ST   Penta D: 8 (CLS)
+ST   Penta D: 8,15 (CCRID; DSMZ; PubMed=25877200)
+ST   Penta E: 7,17
+ST   TH01: 7
+ST   TPOX: 8,12
+ST   vWA: 16,18
+DI   NCIt; C27677; Human papillomavirus-related endocervical adenocarcinoma
+OX   NCBI_TaxID=9606; ! Homo sapiens
+SX   Female
+AG   30Y6M
+CA   Cancer cell line
+DT   Created: 04-04-12; Last updated: 12-03-20; Version: 33
+//
+ID   HeLa Kyoto
+AC   CVCL_1922
+SY   HeLa-Kyoto; HeLa (Kyoto); HeLa(Kyoto); HeLa 'Kyoto'; HeLa isolate Kyoto; Hela K
+DR   PRIDE; PXD001333
+DR   PRIDE; PXD002815
+DR   PRIDE; PXD002829
+DR   PRIDE; PXD002987
+DR   Wikidata; Q54882539
+RX   PubMed=26496610;
+CC   From: Narumiya S.; Kyoto University; Kyoto; Japan.
+CC   Transformant: NCBI_TaxID; 333761; Human papillomavirus type 18 (HPV18).
+CC   Omics: Interactome by proteomics.
+DI   NCIt; C27677; Human papillomavirus-related endocervical adenocarcinoma
+OX   NCBI_TaxID=9606; ! Homo sapiens
+HI   CVCL_0030 ! HeLa
+SX   Female
+AG   30Y6M
+CA   Cancer cell line
+DT   Created: 04-04-12; Last updated: 07-09-18; Version: 13
+//
+ID   IF6
+AC   CVCL_6999
+SY   IF-6; 1F6
+DR   BTO; BTO:0002802
+DR   Cosmic; 1181746
+DR   Wikidata; Q54366474
+RX   PubMed=1918136;
+RX   PubMed=2060184;
+CC   Derived from metastatic site: Axillary lymph node.
+DI   NCIt; C3224; Melanoma
+OX   NCBI_TaxID=9606; ! Homo sapiens
+SX   Male
+AG   35Y
+CA   Cancer cell line
+DT   Created: 04-04-12; Last updated: 13-11-18; Version: 8
+//
+ID   MCF-10A
+AC   CVCL_0598
+SY   MCF 10A; MCF.10A; MCF10A; MCF10-A; MCF10a; MCF-10 Attached; Michigan Cancer Foundation-10A
+DR   BTO; BTO:0001939
+DR   CLO; CLO_0007599
+DR   EFO; EFO_0001200
+DR   MCCL; MCC:0000305
+DR   AddexBio; C0006015/4976
+DR   ArrayExpress; E-MTAB-2706
+DR   ArrayExpress; E-TABM-157
+DR   ATCC; CRL-10317
+DR   BCRJ; 0161
+DR   BioSample; SAMN03471375
+DR   CCRID; 3111C0001CCC000406
+DR   CCRID; 3131C0001000200025
+DR   ChEMBL-Cells; CHEMBL3307364
+DR   ChEMBL-Targets; CHEMBL614321
+DR   Cosmic; 1136376
+DR   Cosmic; 1176649
+DR   Cosmic; 2318371
+DR   Cosmic; 2560254
+DR   DepMap; ACH-001357
+DR   ENCODE; ENCBS066ENC
+DR   ENCODE; ENCBS067ENC
+DR   ENCODE; ENCBS317EPD
+DR   ENCODE; ENCBS417KGL
+DR   ENCODE; ENCBS617ENC
+DR   ENCODE; ENCBS618ENC
+DR   ENCODE; ENCBS619ENC
+DR   ENCODE; ENCBS620ENC
+DR   ENCODE; ENCBS621ENC
+DR   ENCODE; ENCBS622ENC
+DR   ENCODE; ENCBS623ENC
+DR   ENCODE; ENCBS868SSJ
+DR   GEO; GSM50033
+DR   GEO; GSM155217
+DR   GEO; GSM320171
+DR   GEO; GSM350543
+DR   GEO; GSM498022
+DR   GEO; GSM498026
+DR   GEO; GSM756371
+DR   GEO; GSM845395
+DR   GEO; GSM844584
+DR   GEO; GSM1053724
+DR   GEO; GSM1172973
+DR   GEO; GSM1172882
+DR   GEO; GSM1238116
+DR   GEO; GSM1328939
+DR   GEO; GSM1328940
+DR   GEO; GSM1328941
+DR   IBRC; C10788
+DR   IGRhCellID; MCF10A
+DR   IZSLER; BS CL 174
+DR   KCB; KCB 2014066YJ
+DR   LINCS_HMS; 50583
+DR   LINCS_LDP; LCL-2085
+DR   Lonza; 131
+DR   MetaboLights; MTBLS401
+DR   MetaboLights; MTBLS669
+DR   NCBI_Iran; C609
+DR   PharmacoDB; MCF10A_891_2019
+DR   PRIDE; PXD000309
+DR   PRIDE; PXD000593
+DR   PRIDE; PXD000691
+DR   PRIDE; PXD003370
+DR   PRIDE; PXD005339
+DR   PRIDE; PXD009668
+DR   TOKU-E; 2378
+DR   Wikidata; Q54904280
+RX   DOI=10.1016/B978-0-12-333530-2.50009-5;
+RX   Patent=US5436152;
+RX   PubMed=1975513;
+RX   PubMed=12661003;
+RX   PubMed=15375546;
+RX   PubMed=17157791;
+RX   PubMed=19582160;
+RX   PubMed=20169162;
+RX   PubMed=22414580;
+RX   PubMed=24009699;
+RX   PubMed=24094812;
+RX   PubMed=24162158;
+RX   PubMed=24176112;
+RX   PubMed=24262153;
+RX   PubMed=25485619;
+RX   PubMed=25960936;
+RX   PubMed=26055192;
+RX   PubMed=26218769;
+RX   PubMed=28196595;
+RX   PubMed=28287265;
+RX   PubMed=28596718;
+RX   PubMed=28889351;
+RX   PubMed=30787054;
+WW   https://strap.nci.nih.gov/celline_detail.php?sample_id=81
+WW   http://lincs.hms.harvard.edu/resources/reagents/icbp43/
+WW   https://www.synapse.org/#!Synapse:syn2346643/wiki/62255
+WW   http://tcpaportal.org/mclp/
+WW   http://www.cellresource.cn/fdetail.aspx?id=482
+WW   http://www.cellresource.cn/fdetail.aspx?id=2025
+CC   Part of: GrayJW Breast Cancer Cell Line Panel.
+CC   Part of: ICBP43 breast cancer cell line panel.
+CC   Part of: MD Anderson Cell Lines Project.
+CC   Doubling time: 26.74 hours (https://www.synapse.org/#!Synapse:syn2347014).
+CC   HLA typing: A*33:01,01:01; B*55:01,40:01; C*07:02,03:03; DQA1*03:02,02:01; DQB1*03:05,03:05; DRB1*04:02,11:44 (PubMed=25960936).
+CC   Microsatellite instability: Stable (MSS) (PubMed=12661003).
+CC   Omics: CNV analysis.
+CC   Omics: Deep proteome analysis.
+CC   Omics: Deep RNAseq analysis.
+CC   Omics: DNA methylation analysis.
+CC   Omics: Glycoproteome analysis by proteomics.
+CC   Omics: Metabolome analysis.
+CC   Omics: N-glycan profiling.
+CC   Omics: Protein expression by reverse-phase protein arrays.
+CC   Omics: SNP array analysis.
+CC   Omics: Transcriptome analysis.
+ST   Source(s): AddexBio; ATCC; CCRID; PubMed=25877200; PubMed=28889351
+ST   Amelogenin: X
+ST   CSF1PO: 10,12
+ST   D12S391: 17,20
+ST   D13S317: 8,9
+ST   D16S539: 11,12
+ST   D18S51: 18,19
+ST   D19S433: 13,15
+ST   D21S11: 28,30
+ST   D2S1338: 21,26
+ST   D3S1358: 14,18
+ST   D5S818: 10,13
+ST   D6S1043: 12,18
+ST   D7S820: 10,11
+ST   D8S1179: 14,16
+ST   FGA: 22,24
+ST   Penta D: 10,12
+ST   Penta E: 13,14
+ST   TH01: 8,9.3
+ST   TPOX: 9,11
+ST   vWA: 15,17
+OX   NCBI_TaxID=9606; ! Homo sapiens
+HI   CVCL_3633 ! MCF-10F
+SX   Female
+AG   36Y
+CA   Spontaneously immortalized cell line
+DT   Created: 04-04-12; Last updated: 19-12-19; Version: 31
+//
+ID   MCF-10AT
+AC   CVCL_5555
+SY   MCF10AT
+DR   GEO; GSM498023
+DR   GEO; GSM498027
+DR   IGRhCellID; MCF10AT
+DR   Wikidata; Q54904299
+RX   PubMed=8546221;
+RX   PubMed=15375546;
+RX   PubMed=20169162;
+RX   PubMed=24262153;
+CC   Transfected with: HGNC; 5173; HRAS (with p.Gly12Val).
+CC   Transfected with: UniProtKB; P00552; Transposon Tn5 neo.
+CC   Omics: CNV analysis.
+CC   Omics: Glycoproteome analysis by proteomics.
+OX   NCBI_TaxID=9606; ! Homo sapiens
+HI   CVCL_5554 ! MCF-10A-neoT
+SX   Female
+AG   36Y
+CA   Transformed cell line
+DT   Created: 04-04-12; Last updated: 07-09-18; Version: 13
+//

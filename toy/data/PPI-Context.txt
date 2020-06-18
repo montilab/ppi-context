@@ -1,0 +1,13 @@
+id	gene_a	gene_b	pid	cell_name	cell_category	cell_sex	cell_species
+7542	FOXH1	FOXG1	20211142	IF6	Cancer cell line	Male	Homo sapiens
+7542	FOXH1	FOXG1	20211142	CHO-K1	Spontaneously immortalized cell line	Female	Cricetulus griseus
+8490	PHF12	HDAC1	23752268	CCRF-CEM	Cancer cell line	Female	Homo sapiens
+8490	PHF12	HDAC1	23752268	HeLa	Cancer cell line	Female	Homo sapiens
+8490	PHF12	HDAC1	23752268	HEK293	Transformed cell line	Female	Homo sapiens
+8490	PHF12	HDAC1	26496610	HeLa Kyoto	Cancer cell line	Female	Homo sapiens
+8490	PHF12	HDAC1	28514442	MCF-10A	Spontaneously immortalized cell line	Female	Homo sapiens
+8490	PHF12	HDAC1	28514442	HEK293T	Transformed cell line	Female	Homo sapiens
+8490	PHF12	HDAC1	28514442	HeLa	Cancer cell line	Female	Homo sapiens
+8490	PHF12	HDAC1	28514442	HCT 116	Cancer cell line	Male	Homo sapiens
+8490	PHF12	HDAC1	28514442	MCF-10AT	Transformed cell line	Female	Homo sapiens
+8492	PARD3	YWHAH	26496610	HeLa Kyoto	Cancer cell line	Female	Homo sapiens

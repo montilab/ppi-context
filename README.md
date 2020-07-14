@@ -7,37 +7,40 @@ Contextualization of protein-protein interaction databases by cell line
 
 #### Clone repository
 
-    git clone https://github.com/montilab/ppi-context
-    cd ppi-context
+    $ git clone https://github.com/montilab/ppi-context
+
+#### Install requirements
+
+    $ cd ppi-context
+    $ pip install -r requirements.txt
 
 #### The data
 
 If you just want the data it’s easy to load into R…
 
+    $ R
+
 ``` r
-ppi <- read.delim("data/PPI-Context.txt", header=TRUE, sep="\t", stringsAsFactors=FALSE)
-head(ppi)
+ppi <- read.delim("data/v_1_00/PPI-Context.txt", header=TRUE, sep="\t", stringsAsFactors=FALSE)
 ```
 
-    #>   id  gene_a  gene_b      pid cell_name                        cell_category
-    #> 1  0 ALDH1A1 ALDH1A1 25416956       HEK                     Cancer cell line
-    #> 2  2 PPP1R9A   ACTG1  9362513      Rat1 Spontaneously immortalized cell line
-    #> 3  2 PPP1R9A   ACTG1  9362513      PC12                     Cancer cell line
-    #> 4  2 PPP1R9A   ACTG1  9362513       Sf9 Spontaneously immortalized cell line
-    #> 5  2 PPP1R9A   ACTG1  9362513     COS-7                Transformed cell line
-    #> 6  7  PIK3R2   ERBB2 16729043  Hs 912.T                     Cancer cell line
-    #>   cell_sex          cell_species
-    #> 1   Female          Homo sapiens
-    #> 2              Rattus norvegicus
-    #> 3     Male     Rattus norvegicus
-    #> 4   Female Spodoptera frugiperda
-    #> 5     Male  Chlorocebus aethiops
-    #> 6   Female          Homo sapiens
+``` r
+data.frame(sort(table(ppi$cell_name), decreasing=TRUE)) %>%
+set_colnames(c("var", "freq")) %>%
+head(30) %>%
+ggbarplot(x="var", y="freq", fill="freq") +
+labs(title="", x="Cell Line Name", y="PPI") +
+scale_fill_viridis_c(option="inferno", begin=0, end=0.8) + 
+theme(legend.position="none",
+      axis.text.x=element_text(angle=45, hjust=1, size=12, face="bold"))
+```
+
+<img src="README_files/figure-gfm/unnamed-chunk-3-1.png" style="display: block; margin: auto;" />
 
 #### Pre-processing the data
 
     | PPI - Context (v1.0)
-    usage: pipeline.py [-h] [-r] [-d]
+    usage: ppictx.py [-h] [-r] [-d]
                        [-fh PATH_HIPPIE] 
                        [-fp PATH_PUBTATOR]
                        [-fc PATH_CELLOSAURUS]
@@ -54,7 +57,7 @@ In most cases you will need to download the latest bulk data first and
 then process it…
 
 ``` bash
-python3 ppictx.py --download --run
+$ python ppictx.py --download --run
 ```
 
     | PPI - Context (v1.0)
@@ -69,8 +72,8 @@ In other cases, you might have the previous versions of the data to
 process…
 
 ``` bash
-python3 ppictx.py --run \
-                  -fh path/to/HIPPIE.mitab \
-                  -fp path/to/PUBTATOR.gz \
-                  -fc path/to/CELLOSAURUS.txt
+$ python ppictx.py --run \
+                   -fh path/to/HIPPIE.mitab \
+                   -fp path/to/PUBTATOR.gz \
+                   -fc path/to/CELLOSAURUS.txt
 ```

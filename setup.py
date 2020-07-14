@@ -13,7 +13,7 @@ setup(
     version='1.0.0',
     description='Contextualized protein-protein interactions',
     long_description=readme,
-    url='https://github.com/anfederico/ppi-context',
+    url='https://github.com/montilab/ppi-context',
     license=license,
     packages=find_packages(exclude=('release'))
 )

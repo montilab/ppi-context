@@ -1,0 +1,144 @@
+---
+title: "Tissue Specificity"
+vignette: >
+  %\VignetteIndexEntry{Tissue Specificity}
+  %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, include=FALSE, messages=FALSE, warnings=FALSE}
+knitr::opts_chunk$set(comment="", cache=FALSE, fig.align="center", fig.width=12, fig.height=7)
+devtools::load_all(".")
+repo <- file.path(Sys.getenv("github"), "ppi-context")
+source(file.path(repo, "dev/data.R"))
+ppi <- data.ppi(file.path(repo, "data/v_1_00/PPI-Context.txt"))
+tissues <- read.delim(file.path(repo, "data/v_1_00/Tissues.txt"))
+
+library(magrittr)
+library(dplyr)
+library(ggplot2)
+library(janitor)
+library(ComplexHeatmap)
+library(circlize)
+```
+
+## Requirements
+
+```{r, eval=FALSE}
+library(magrittr)
+library(dplyr)
+library(ggplot2)
+library(janitor)
+library(ComplexHeatmap)
+library(circlize)
+```
+
+## Data
+
+Previous efforts to infer environmental-specificity of PPIs includes integration of tissue-specific gene expression from GTEx. Integrating expression information to infer context may be useful, particulary when used with literature-derived annotations. Here we provide quick access to the processed data for expression of `r nrow(tissues)` proteins across `r ncol(tissues)` derived from the Human Integrated Protein-Protein Interaction rEference (HIPPIE) and provide some useful examples for manipulating the data.
+
+```{r, eval=FALSE}
+tissues <- read.delim("data/v_1_00/Tissues.txt")
+```
+
+```{r}
+tissues <- janitor::clean_names(tissues)
+```
+
+If a protein is expressed above a certain threshold in a given tissue, it is deemed active (1) in that tissue.
+
+```{r}
+tissues[1:5,1:5]
+dim(tissues)
+```
+
+## Integrating with interactions
+
+Load in the PPIs...
+
+```{r, eval=FALSE}
+ppi <- data.ppi("data/v_1_00/PPI-Context.txt")
+```
+
+Here we are just taking the top cell lines with the most PPIs to assign tissue specificity.
+
+```{r}
+cells <- data.frame(sort(table(ppi$cell_name), decreasing=TRUE)) %>%
+    magrittr::set_colnames(c("var", "freq")) %>%
+    head(25) %$%
+    var %>%
+    as.character()
+
+head(cells)
+```
+
+```{r}
+dfs <- mapply(function(cell) {
+    df <- ppi %>%
+          dplyr::filter(cell_name == cell) %>%
+          dplyr::select(gene_a, gene_b)
+}, cells, SIMPLIFY=FALSE)
+```
+
+An interaction is active in a tissue if both interacting partners are expressed in that tissue. Here is an example of using this data to create a *PPI x Tissue* matrix of tissue-specificity for the subset of PPIs annotated with the HeLa cell line.
+
+```{r}
+df <- dfs[["HeLa"]]
+df %<>% dplyr::mutate(ppi = paste(gene_a, gene_b, sep=" / "))
+example <- sapply(tissues, function(tissue) {
+    tissue.expressed <- rownames(tissues)[tissue == 1]
+    df$gene_a %in% tissue.expressed & df$gene_b %in% tissue.expressed
+}) %>%
+magrittr::set_rownames(df$ppi)
+dim(example)
+example[1:5,1:5]
+```
+
+## Tissue-activity by cell line
+
+The dimensionality of the data is large, rather we can try to summarize it by looking at the total activity of cell-specific PPIs across different GTEx tissues.
+
+````{r}
+data <- lapply(dfs, function(df) {
+    apply(tissues, 2, function(tissue) {
+        expressed <- as.integer(tissue[df$gene_a] == 1 & tissue[df$gene_b] == 1)
+        return( sum(expressed) / length(expressed) ) # Normalize by size
+    })
+})
+```
+
+```{r}
+mat <- do.call(cbind, data)
+mat[1:5,1:5]
+```
+
+```{r}
+ht <- HeatmapAnnotation(Size=anno_barplot(apply(tissues, 2, sum), gp=gpar(fill="azure2", color="azure4")))
+hr <- rowAnnotation(Size=anno_barplot(sapply(dfs, nrow), gp=gpar(fill="azure2", color="azure4")))
+
+mat.scaled <- t(apply(mat, 2, scale))
+colnames(mat.scaled) <- rownames(mat)
+Heatmap(mat.scaled,
+        name="Activity", 
+        col=colorRamp2(c(-2, 0, 2), c("cornflowerblue", "white", "red")),
+        rect_gp=gpar(col="white"),
+        cluster_rows=TRUE,
+        cluster_columns=TRUE,
+        top_annotation=ht,
+        right_annotation=hr,
+        clustering_distance_rows="euclidean",
+        clustering_method_rows="ward.D",    
+        clustering_distance_columns="euclidean",
+        clustering_method_columns="ward.D",
+        column_title="GTEx Tissues",
+        column_names_gp=gpar(fontsize=8, fontface=2),
+        column_names_rot=50,
+        row_title="Cell-specific PPIs",
+        row_names_gp=gpar(fontsize=8),
+        show_column_names=TRUE,
+        show_row_names=TRUE)
+```
+
+Here is a heatmap visualizing overall activity of cell-specific PPIs across GTEx tissues, where each value represents the fraction of cell-specific PPIs active in a tissue. Barplots in the margins show the number of proteins defined as active in each tissue and the total number of PPIs in each cell line.

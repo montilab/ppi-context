@@ -1,0 +1,26 @@
+url: https://github.com/montilab/ppi-context
+
+development:
+  mode: auto
+
+template:
+  params:
+    bootswatch: lumen
+
+navbar:
+  title: "PPI-Context"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Docs"
+      menu:
+      - text: "Publication Annotations"
+        href: articles/docs/publications.html
+      - text: "Tissue Specificity"
+        href: articles/docs/tissues.html
+
+authors:
+  Anthony Federico:
+    href: https://github.com/anfederico
+  Stefano Monti:
+    href: https://github.com/tetomonti

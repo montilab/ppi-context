@@ -1,0 +1,21 @@
+Package: ppi.context
+Title: PPI-Context
+Version: 1.00
+Authors@R: c(person(given="Anthony", family="Federico", email="anfed@bu.edu", 
+             role=c("aut", "cre")),
+             person(given="Stefano", family="Monti", email="smonti@bu.edu", 
+             role=c("aut")))
+Description: Contextualization of protein-protein interaction databases by cell line.
+Depends: R (>= 4.0.0)
+License: GPL-3 + file LICENSE
+URL: https://github.com/montilab/ppi-context
+Imports: 
+Encoding: UTF-8
+LazyData: false
+RoxygenNote: 7.1.1
+Suggests: 
+    testthat,
+    knitr,
+    rmarkdown,
+    pkgdown
+VignetteBuilder: knitr

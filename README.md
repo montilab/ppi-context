@@ -77,3 +77,16 @@ $ python ppictx.py --run \
                    -fp path/to/PUBTATOR.gz \
                    -fc path/to/CELLOSAURUS.txt
 ```
+
+#### Special considerations
+
+  - Cell lines that are primarily used in research due to their
+    efficiency as an expression vector (e.g. *HeLa, HEK, CHO, Sf9*) may
+    not be useful representations of cell-specific protein dynamics.
+    However it may be useful to filter out PPIs annotated with these
+    cell lines.
+
+  - Cellosaurus contains synonymous cell lines, therefore some
+    annotations such as *HEK (CVCL\_M624)* and *HEK293 (CVCL\_0045)*
+    refer to the same cell line. Users should be aware of synonymous
+    cell lines relevant to their interests and filter accordingly.
